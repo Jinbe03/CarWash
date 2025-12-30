@@ -20,4 +20,5 @@ from django.urls import path, include
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('turnos.urls')), 
+    path('turnos/', include('turnos.urls', namespace='turnos_app')),
 ]
